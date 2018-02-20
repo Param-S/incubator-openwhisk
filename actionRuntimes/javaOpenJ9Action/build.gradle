@@ -1,0 +1,2 @@
+ext.dockerImageName = 'java8openj9action'
+apply from: '../../gradle/docker.gradle'

@@ -76,18 +76,46 @@
         "java": [
             {
                 "kind": "java",
-                "default": true,
                 "image": {
                     "name": "java8action"
                 },
                 "deprecated": false,
+                "default": true,
                 "attached": {
                     "attachmentName": "jarfile",
                     "attachmentType": "application/java-archive"
                 },
                 "sentinelledLogs": false,
                 "requireMain": true
-            }
+	    },
+	    {
+		"kind": "java8:hotspot",
+		"image": {
+		    "name": "java8action"
+		},
+		"deprecated": false,
+		"default": false,
+                "attached": {
+                    "attachmentName": "jarfile",
+                    "attachmentType": "application/java-archive"
+                },
+                "sentinelledLogs": false,
+                "requireMain": true
+	    },
+	    {
+		"kind": "java8:openj9",
+		"image": {
+		    "name": "java8openj9action"
+		},
+		"deprecated": false,
+		"default": false,
+                "attached": {
+                    "attachmentName": "jarfile",
+                    "attachmentType": "application/java-archive"
+                },
+                "sentinelledLogs": false,
+                "requireMain": true
+	    }
         ],
         "php": [
             {
